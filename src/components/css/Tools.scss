@@ -1,0 +1,138 @@
+.tools {
+    margin: 3rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 1.2s;
+    animation-name: subtleFade;
+    
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #262626;
+    margin-right: 0;
+    text-decoration: none;
+    color: #D3D3D3;
+    width: 6rem;
+    font-weight: 500;
+
+    
+
+    &:first-child {
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    &:last-child {
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    &:target {
+        color: #000;
+        background-color: #D3D3D3;
+
+        .logo-img {
+            display:none;
+        }
+    }
+
+    .logo-img {
+        height: 2.75rem;
+        margin-bottom: .5rem;
+        color: #fff;
+    
+    }
+}
+
+.tools-description {
+    margin: 2rem;
+}
+
+.tools-description-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .tools {
+        margin: 4rem 1rem;
+    }
+
+    .icons {
+        font-size: .9rem;
+        
+        
+    }
+
+    .icon {
+        padding: .5rem;
+    }
+
+
+    .logo-img {
+        width: 2rem;
+        margin-bottom: .25rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
+        background-color: #c8c1c15d;
+        border-radius: 6px;
+        padding: .1rem;
+
+    }
+
+    .icon {
+        border-radius: 5px;
+
+        &:first-child {
+            border-radius: 5px;
+        }
+
+        &:last-child {
+            border-radius: 5px;
+        }
+    }
+
+    .tools-tags {
+        margin:0;
+    }
+}
+
+@keyframes subtleFade {
+    0% {
+      mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 150% 0 / 400% no-repeat;
+      opacity: .2;
+    }
+    100% {
+      mask: linear-gradient(90deg, #000 25%, #000000e6 50%, #00000000) 0 / 400% no-repeat;
+      opacity: 1;
+    }
+    // https://twitter.com/shuding_/status/1556357928176730113
+  
+}
