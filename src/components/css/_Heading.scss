@@ -1,10 +1,11 @@
 .heading {
-    margin: 2rem 16rem;
+    margin: 2rem 8rem 1rem 8rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: .5rem;
     border-radius: 6px;
+    position: relative;
 }
 
 .heading-title {
@@ -14,9 +15,11 @@
 }
 
 .name {
+    font-family: 'Rubik';
     font-weight: 500;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     opacity: .9;
+    color: $color-white;
 }
 
 .profile-pic {
@@ -27,26 +30,24 @@
 }
 
 .message-me {
-    display: flex;
-    align-items: center;
+    
     gap: 1rem;
     padding: .5rem 1rem;
-    border: 0;
-    
     border-radius: 4px;
-    background-color: rgba(84, 84, 84, 0.305);
-    border: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(30px);
-    
-    font-size: .875rem;
-    cursor: pointer;
+    border: 1px solid (rgba($color-x, .25));
+    background-image: url(../../../public/assets/galaxy-bg.png);
 
-    & a {
+    
+    & .call {
+        display: flex;
+        align-items: center;
+        gap: .375rem;
         text-decoration: none;
-        color: #d2d3e7ca;
+        animation: Color 20s linear infinite;
+        -webkit-animation: Color 20s ease-in-out infinite;
+        
     }
 }
-
 @media screen and(max-width: 880px) { 
 
     .heading {
@@ -68,10 +69,11 @@
 
 @media screen and (max-width: 440px) {
     .heading {
-        margin: 2rem 0rem;
+        padding: 2rem 1rem;
+        margin: 0rem 0rem 1rem 0rem;
         display: flex;
         gap: 1rem;
-        padding:1rem;
+        
         
         background-color: #19191947;
         
@@ -100,7 +102,7 @@
 
 @media screen and (max-width: 380px) {
     .heading {
-        padding: 1rem .5rem;
+        
             
         
         gap: .5rem;

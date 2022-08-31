@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Rubik', 'Alegreya Sans', 'Segoe UI', 'Roboto',
+  font-family: -apple-system, BlinkMacSystemFont, 'DM Sans', 'Alegreya Sans', 'Segoe UI', 'Roboto',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -13,7 +13,11 @@ code {
 }
 
 :root {
-    background-color: #2B2B2B;
-    
+    color: #FFFBF8;
+    background-color: #0d0a0dfc; 
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+
 }
 

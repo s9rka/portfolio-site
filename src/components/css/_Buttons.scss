@@ -1,3 +1,5 @@
+
+
 .buttons {
     display: flex;
     flex-direction: row;
@@ -5,20 +7,16 @@
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #C3C3C3;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
     user-select: none;
-    color: grey;
-    -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/300%
-      100%;
-    background-repeat: no-repeat;
+    
+    
     animation:  enlarge 2s 1, shimmer 2s 1 2s;
-    
-    
+    height: 10rem;
     
   }
-
 
 @keyframes shimmer {
     100% {
@@ -55,47 +53,62 @@
 }
     
     
+.button-container {
+    display: flex;
+    flex-direction: row;
+    
 
+}
 
 .button {
-    
+
+    height: 25%;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2F2F2F;
-    color: #D3D3D3;
-    padding: 1.5rem 2rem;
+    border: 2px solid (rgba($color-x, .25));
+    color: $color-white;
+    padding: 1rem 2rem;
     margin-right: 2rem;
     cursor: pointer;
-    border-radius: .25rem;
+    border-radius: 6px;
+    
+    z-index: 2;
 
-    &:target {
-        color: #4B4B4B;
-        background-color: #D3D3D3;
-        
+    
+    
+
+    &:first-child {
+        z-index: 3
     }
 
     &:last-child {
-        margin-right: 0;
+        z-index: 1;
     }
 }
 
 .button-active {
-    color: #4B4B4B;
-    background-color: #D3D3D3;
+    background-color: (rgba($color-main, .24));
 }
 
 .button-icon {
     margin-right: .75rem;
-    height: 1.75rem;
+    fill: $color-x;
+    align-self: center;
+    justify-self: center;
 }
 
 @media screen and (max-width: 880px) {
     .button {
-        margin-right: 0;
+        margin-right: .25rem;
         font-size: 1.5rem;
-        width: 100%;
+        width: 30vw;
+        height: 40%;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     .buttons {margin: 1rem}
@@ -105,29 +118,25 @@
 @media screen and (max-width: 600px) {
 
     .buttons {
-        margin-top:3rem;
+        margin-top: 1.25rem;
     }
     .button {
         padding: 1.25rem 0rem;
-        border-color: #635A5A;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: .5rem;
         font-size: 1rem;
+        box-shadow: 0rem .5rem .5rem rgba(0, 0, 0, 0.2);
+    }
+
+    .button-active {
+        background-color: (rgba($color-accent, .2));
     }
 
     .button-icon {
         margin-right: 0;
         width: 32px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .button {
-        &:target {
-            color: #1a1a1a;
-        }
     }
 }
 

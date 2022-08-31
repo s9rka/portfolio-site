@@ -1,0 +1,41 @@
+.art-frame {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-items: center;
+    display:none;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.art-piece {
+    width: 20rem;
+}
+
+.midjourney {
+    margin-top: .25rem;
+    
+
+    & a {
+        text-decoration: none;
+        color: #A5A6F6;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .art-piece {
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .art-frame {
+        display: none;
+    }
+
+    
+}

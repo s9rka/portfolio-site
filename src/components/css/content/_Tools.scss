@@ -13,12 +13,18 @@
     align-items: center;
     animation-duration: 1.2s;
     animation-name: subtleFade;
+    width: 32rem;
+    
+    
     
 }
 
 .icons {
     display: flex;
     flex-direction: row;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    
 
 }
 
@@ -28,21 +34,21 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #262626;
+    background-color: (rgba($color-main, .12));
     margin-right: 0;
     text-decoration: none;
-    color: #D3D3D3;
+    color: $color-white;
     width: 6rem;
     font-weight: 500;
 
     
 
     &:first-child {
-        border-radius: 5px 0px 0px 5px;
+        border-radius: 8px 0px 0px 8px;
     }
 
     &:last-child {
-        border-radius: 0px 5px 5px 0px;
+        border-radius: 0px 8px 8px 0px;
     }
 
     &:target {
@@ -66,7 +72,12 @@
     margin: 2rem;
 }
 
+.tools-tags {
+    
+}
+
 .tools-description-content {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -101,7 +112,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2px;
-        background-color: #c8c1c15d;
         border-radius: 6px;
         padding: .1rem;
 

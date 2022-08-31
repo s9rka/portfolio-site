@@ -1,5 +1,4 @@
 import React from 'react'
-import './css/Abilities.scss'
 
 function Studies() {
   return (
@@ -10,15 +9,18 @@ function Studies() {
                 <input type="checkbox" />
                 <div class="card">
                 <div class="front">
-                    <img className='pillar' src='./assets/dorian.svg'></img>
+                    <img className='pillar' src='./assets/dorian.svg' alt="dorian-pillar"></img>
                     Psychology
+                    <img src='./assets/flip.svg'></img>
+
                 </div>
-                <div class="back"><img className='pillar' src='./assets/dorian.svg'></img>
+                <div class="back"><img className='pillar' src='./assets/dorian.svg' alt="dorian-pillar"></img>
                     My main reason for studying psychology is to make better decisions
                     <ul>
                         <li>Bachelors of Psychology in Tartu University (2017-2020)</li>
-                        <li>Wrote an <a className='study-link' href="https://www.err.ee/1063444/soren-pruul-tolgendusi-mudides-muutusteni" target="_blank">article</a> (in Estonian) on a wave of research named Wise Interventions</li>
-                    </ul>    
+                        <li>For my <a href='https://www.academia.edu/81826045/The_effect_of_attentional_scope_on_the_decision_making_process'>final thesis</a> we put together an experiment to monitor eye movements during decision making in a virtual snack store</li>
+                        <li>Wrote an <a className='study-link' href="https://www.err.ee/1063444/soren-pruul-tolgendusi-mudides-muutusteni" target="_blank" rel="noopener noreferrer">article</a> (in Estonian) on a wave of research named Wise Interventions</li>
+                    </ul> 
                 </div>
                 </div>
             </label> 
@@ -29,13 +31,13 @@ function Studies() {
                 <input type="checkbox" />
                 <div class="card">
                 <div class="front">
-                    <img className='pillar' src='./assets/ionian.svg'></img>
-                    UX Design
+                    <img className='pillar' src='./assets/ionian.svg' alt="ionian-pillar"></img>
+                    Design
+                    <img className='flip-icon' src='./assets/flip.svg'></img>
                 </div>
-                <div class="back"><img src='./assets/ionian.svg'></img>
-                    First time I saw the word UX was when I read a book called <a href="https://www.goodreads.com/book/show/17272574-mobile-persuasion-design"className='study-link' target="_blank">
-                     Mobile Persuasion Design: Changing Behaviour by Combining Persuasion Design With Information Design</a>
-                      <br/> <span>All the words of the title spoke to me but it was 2 years later when I got into it.</span> </div>
+                <div class="back"><img src='./assets/ionian.svg' alt="ionian-pillar"></img>
+                    Through design I turn information into digestible forms - content. <br /> Great design is not only pleasant to look at, but also requires minimal cognitive load to navigate.
+                </div>
                 </div>
             </label>
         </div>
@@ -45,11 +47,12 @@ function Studies() {
                 <input type="checkbox" />
                 <div class="card">
                 <div class="front">
-                    <img className='pillar' src='./assets/corinthian.svg'></img>
+                    <img className='pillar' src='./assets/corinthian.svg' alt="corinthian-pillar"></img>
                     Code
+                    <img src='./assets/flip.svg'></img>
                 </div>
-                <div class="back"><img className='pillar' src='./assets/corinthian.svg'></img>
-                    To realize my ideas I turn design into code</div>
+                <div class="back"><img className='pillar' src='./assets/corinthian.svg' alt="corinthian-pillar"></img>
+                    To realize my ideas I turn code into fully responsive and seamless interfaces</div>
                 </div>
             </label>
         </div>
