@@ -1,37 +1,78 @@
-
-@keyframes Color{
-    0%{
-      color: #F3D8C7;
-      fill:#F3D8C7;
-    }
-    
-    20%{
-      color: #e5d1c5;
-      fill:#e5d1c5;
-    }
-    
-    40%{
-      color:#d6b6cb;
-      fill:#d6b6cb;
-
-    }
-    
-    60%{
-      color:#D7A7C6;
-      fill: #D7A7C6;
-
-    }
-    
-    80%{
-      color:#e3bed6;
-      fill:#e3bed6;
-
-    }
-
-    100%{
-        color:#e4d3c8;
-        fill:#e4d3c8;
-  
-      }
-    
+@keyframes Color {
+  0% {
+    color: #f3d8c7;
+    fill: #f3d8c7;
   }
+
+  20% {
+    color: #e5d1c5;
+    fill: #e5d1c5;
+  }
+
+  40% {
+    color: #d6b6cb;
+    fill: #d6b6cb;
+  }
+
+  60% {
+    color: #d7a7c6;
+    fill: #d7a7c6;
+  }
+
+  80% {
+    color: #e3bed6;
+    fill: #e3bed6;
+  }
+
+  100% {
+    color: #e4d3c8;
+    fill: #e4d3c8;
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateY(4px);
+  }
+
+  100% {
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes toInvisible {
+    0% {
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

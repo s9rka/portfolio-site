@@ -1,0 +1,185 @@
+.hero-wrapper {
+  position: relative;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 6rem 2rem;
+  position: relative;
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../../assets/images/Sun5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 45% 0;
+    box-shadow: 0 0 2rem 2rem rgba($color-black, 0.5) inset;
+    border-radius: 4rem;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(#f3d8c7, 0.8) 50%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(#f3d8c7, 0.8) 50%,
+      transparent 100%
+    );
+  }
+  margin-top: 2rem;
+}
+
+.hero-text {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  padding: 8rem;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+  
+
+  z-index: 4;
+
+  & img {
+    margin-right: 0.3rem;
+    margin-bottom: -0.2rem;
+  }
+}
+
+.interfaces {
+  border: 2px solid rgba(#eeeeee, 0.7);
+  display: flex;
+  justify-content: center;
+  border-radius: 40rem;
+  padding: 0.1rem 0.4rem;
+  position: relative;
+  font-style: italic;
+  
+  
+
+  &:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color-main, 1);
+    filter: blur(8px);
+  }
+}
+
+.features {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+  gap: 0.2rem;
+}
+
+.feature {
+  background-color: #eeeeee;
+  color: black;
+  font-weight: 600;
+  padding: 0.2rem;
+}
+
+.hero-p {
+  margin-block-start: 1rem;
+  margin-block-end: 0rem;
+}
+
+.downarrow {
+  animation: moveArrow 2s alternate-reverse infinite;
+  position: relative;
+  margin-top: .2rem;
+
+  &:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color-main, 0.6);
+    filter: blur(8px);
+  }
+}
+
+.scrollsign {
+  position: absolute;
+  margin-top: 4rem;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+  padding: 0.2rem;
+  
+  &.faded {
+    animation: toInvisible 2s ease-in;
+    animation-iteration-count: 1;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .hero-container {
+  }
+
+  .hero-text {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .hero-container {
+    margin: 2rem 0rem;
+    padding: 8rem 2rem;
+
+    &::before {
+      background-size: contain;
+      background-position: 50% 0;
+    }
+  }
+
+  .hero-text {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-wrapper {
+    height: 70vh;
+  }
+  .hero-container {
+    margin: 4rem 0rem 4rem 0rem;
+    padding: 4rem 0rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero-container {
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .scrollsign {
+    display: none;
+  }
+}

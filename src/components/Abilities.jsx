@@ -11,11 +11,11 @@ function Studies() {
                 <div class="front">
                     <img className='pillar' src='./assets/dorian.svg' alt="dorian-pillar"></img>
                     Psychology
-                    <img src='./assets/flip.svg'></img>
+                    <img src='./assets/flip.svg' alt="enter"></img>
 
                 </div>
                 <div class="back"><img className='pillar' src='./assets/dorian.svg' alt="dorian-pillar"></img>
-                    My main reason for studying psychology is to make better decisions
+                    My main reason for studying psychology is to better understand how we make decisions:
                     <ul>
                         <li>Bachelors of Psychology in Tartu University (2017-2020)</li>
                         <li>For my <a href='https://www.academia.edu/81826045/The_effect_of_attentional_scope_on_the_decision_making_process'>final thesis</a> we put together an experiment to monitor eye movements during decision making in a virtual snack store</li>
@@ -31,12 +31,12 @@ function Studies() {
                 <input type="checkbox" />
                 <div class="card">
                 <div class="front">
-                    <img className='pillar' src='./assets/ionian.svg' alt="ionian-pillar"></img>
+                    <img className='pillar' src='./assets/ionian.svg' alt="ionian-pillar"></img><div />
                     Design
-                    <img className='flip-icon' src='./assets/flip.svg'></img>
+                    <img className='flip-icon' src='./assets/flip.svg' alt="enter"></img>
                 </div>
                 <div class="back"><img src='./assets/ionian.svg' alt="ionian-pillar"></img>
-                    Through design I turn information into digestible forms - content. <br /> Great design is not only pleasant to look at, but also requires minimal cognitive load to navigate.
+                    Through design I turn information into digestible forms - content. <br /> Great design is not only pleasing to the eye, but also requires minimal cognitive load to navigate.
                 </div>
                 </div>
             </label>
@@ -49,7 +49,7 @@ function Studies() {
                 <div class="front">
                     <img className='pillar' src='./assets/corinthian.svg' alt="corinthian-pillar"></img>
                     Code
-                    <img src='./assets/flip.svg'></img>
+                    <img src='./assets/flip.svg' alt="enter"></img>
                 </div>
                 <div class="back"><img className='pillar' src='./assets/corinthian.svg' alt="corinthian-pillar"></img>
                     To realize my ideas I turn code into fully responsive and seamless interfaces</div>

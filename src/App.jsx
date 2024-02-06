@@ -1,13 +1,20 @@
-import Heading from "./components/Heading";
 import "./App.css";
 import "./components/css/main.scss";
+import Header from "./components/Header";
+import Hero from "./Hero";
 import Tabs from "./Tabs";
 
 function App() {
   return (
-    <div className="resume">
-      < Heading />
-        < Tabs /> 
+    <div className="App">
+      <div className="resume">
+        
+        <Header />
+        <Hero />
+        <div className="dabs">
+          <Tabs />
+        </div>
+      </div>
     </div>
   );
 }

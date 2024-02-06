@@ -1,7 +1,7 @@
 
 .studies {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 3rem 2rem;
@@ -9,17 +9,12 @@
     animation-name: subtleFade;
     padding-bottom: 4rem;
     margin-bottom: 6rem;
+    gap: 3rem;
 }
 
 .study {
     margin-right: 2rem;
     padding: 0rem 1rem;
-    
-    
-
-    &:last-child {
-        margin-right: 0rem;
-    }
 }
 
 
@@ -46,8 +41,6 @@ label {
     -webkit-transition: all 600ms;
     transition: all 600ms;
     z-index: 20;
-    
-    
   }
   
   .card div {
@@ -70,14 +63,15 @@ label {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    
+    cursor: auto;
     line-height: 1.5;
     text-align: left;
   }
 
   .card .back a {
     text-decoration: none;
-    color: $color-accent;
+    color: #D8D4E8;
+    border-bottom: 1px solid rgba($color-white, .6);
   }
 
   .card .back img {
@@ -133,10 +127,6 @@ label {
         margin-bottom: 4rem;
     }
 
-    .card .back {
-       
-    }
-
     .front {
         opacity: .9;
     }
@@ -156,6 +146,10 @@ label {
 
     .front {
         font-size: 1.75rem;
+    }
+
+    label {
+        width: 90vw;
     }
 }
 
